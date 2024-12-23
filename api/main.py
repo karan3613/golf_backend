@@ -25,8 +25,3 @@ def analyze_video_content(file_path: str, parameter: str) -> dict:
         "parameter_used": parameter,
         "status": "analysis_complete"
     }
-
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0:0:0:0", port=8000)
